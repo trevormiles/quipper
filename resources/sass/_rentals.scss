@@ -1,0 +1,286 @@
+.rentals {
+	
+	background-color: $light-gray1;
+	
+	display: flex;
+	
+	&__container {
+		overflow-x:scroll;
+	}
+	
+	&__container::-webkit-scrollbar {
+		height: 7px;
+	}
+	
+	&__container::-webkit-scrollbar-track {
+		background-color: $light-gray1;
+	}
+	
+	&__container::-webkit-scrollbar-thumb {
+		background-color: $dark-blue;
+	}
+	
+	&__customer-box {
+		
+		position: relative;
+		z-index: 3;
+		-webkit-box-shadow: 4px 0px 7px 0px rgba(0,0,0,0.15);
+		-moz-box-shadow: 4px 0px 7px 0px rgba(0,0,0,0.15);
+		box-shadow: 4px 0px 7px 0px rgba(0,0,0,0.15);
+		
+		&__table-data {
+			height: 45px;
+			vertical-align: center;
+		}
+		
+		&__table-heading {
+			height: 45px;
+			vertical-align: center;
+			background-color: $dark-gray;
+			color: white;
+		}
+		
+		&__heading {
+			margin: 0px;
+			
+			&__renter {
+				padding-left: 20px;
+			}
+		}
+		
+		&__data {
+			
+			&:nth-child(odd) {
+				background-color: $extra-light-blue;
+			}
+			
+			&:nth-child(even) {
+				background-color: white;
+			}
+			
+		}
+		
+		&__link:hover {
+			text-decoration: underline;
+			text-decoration-color: $dark-blue;
+		}
+		
+		&__name {
+			width: 165px;
+			margin: 0px;
+			padding-left: 20px;
+			padding-right: 20px;
+			white-space: nowrap;
+  			overflow: hidden;
+			text-overflow: ellipsis;
+			color: #404040;
+		}
+		
+		&__date {
+			width: 120px;
+			margin: 0px;
+			color: #404040;
+		}
+		
+	}
+	
+	&__container {
+		position: relative;
+		z-index: 2;
+	}
+	
+	&__table {
+		
+		position: relative;
+		
+		&__date-heading {
+			
+			height: 45px;
+			
+			&:nth-child(even) {
+				background-color: $medium-gray1;
+			}
+			
+			&:nth-child(odd) {
+				background-color: $medium-gray2;
+			}
+			
+			&__day {
+				width: 185px;
+				text-align:center;
+				color: white;
+				font-weight: 700;
+				font-size: 14px;
+				letter-spacing: 0.5px;
+				margin: 0px;
+				line-height: 1.3;
+			}
+			
+			&__date {
+				width: 185px;
+				text-align:center;
+				color: white;
+				font-weight: 200;
+				margin: 0px;
+				letter-spacing: 0.5px;
+				line-height: 1.3;
+				font-size: 12px;
+			}
+			
+			&__text:hover {
+				text-decoration: underline;
+				text-decoration-color: white;
+			}
+			
+		}
+		
+		
+		&__rentals-box {
+			
+			&__text {
+				text-align: center;
+				margin: 0px;
+				height: 45px;
+			}
+			
+			&__start-end {
+				width: 165px;
+				height: 30px;
+				margin-top: 7.5px;
+				margin-bottom: 7.5px;
+				margin-left: 10px;
+				margin-right: 10px;
+				background-color: $light-blue;
+				border-radius: 5px;
+				transition: 0.3s all;
+			}
+			
+			&__start {
+				width: 175px;
+				height: 30px;
+				margin-top: 7.5px;
+				margin-bottom: 7.5px;
+				margin-left: 10px;
+				background-color: $light-blue;
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+				transition: 0.3s all;
+			}
+			
+			&__end {
+				width: 175px;
+				height: 30px;
+				margin-top: 7.5px;
+				margin-bottom: 7.5px;
+				margin-right: 10px;
+				background-color: $light-blue;
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+				transition: 0.3s all;
+			}
+			
+			&__middle {
+				width: 185px;
+				height: 30px;
+				margin-top: 7.5px;
+				margin-bottom: 7.5px;
+				background-color: $light-blue;
+				transition: 0.3s all;
+			}
+			
+		}
+		
+		&__rentals-row {
+			
+			&__status {
+				margin: 0px; 
+				padding: 0px; 
+				text-align: center; 
+				color: white; 
+				z-index: 9999; 
+				font-size: 14px;
+				transition: 0.3s all;
+				font-weight: 400;
+			}
+			
+			&__status:hover {
+				text-decoration-line: none;
+				font-weight: 700;
+				color: white;
+			}
+			
+		}
+		
+	}
+	
+	&__no-active {
+		
+		padding-top: 200px;
+		padding-bottom: 200px;
+		
+		&__heading {
+			margin: 0px;
+			padding: 0px;
+			text-align: center;
+		}
+		
+		&__sub-heading {
+			margin: 0px;
+			padding: 0px;
+			margin-top: 7px;
+			text-align: center;
+			color: #123147;
+		}
+
+	}
+	
+}
+
+.rentals__table__rentals-row:nth-child(even) .rentals__table__rentals-box:nth-child(even) {
+	background-color: #F8F8F8;
+}
+
+.rentals__table__rentals-row:nth-child(even) .rentals__table__rentals-box:nth-child(odd) {
+	background-color: white;
+}
+
+.rentals__table__rentals-row:nth-child(odd) .rentals__table__rentals-box:nth-child(odd) {
+	background-color: #F3F3F3;
+}
+
+.rentals__table__rentals-row:nth-child(odd) .rentals__table__rentals-box:nth-child(even) {
+	background-color: #E9F2EB;
+}
+
+td {
+	padding: 0px;
+}
+
+th {
+	padding: 0px;
+}
+
+.special-class {
+	background-color: $light-green !important;
+	
+	&__today {
+		font-weight: 200;
+	}
+}
+
+.late .rentals__table__rentals-box__start {
+	background-color: $red;
+}
+
+.late .rentals__table__rentals-box__end {
+	background-color: $red;
+}
+
+.late .rentals__table__rentals-box__middle {
+	background-color: $red;
+}
+
+.late .rentals__table__rentals-box__start-end {
+	background-color: $red;
+}
+

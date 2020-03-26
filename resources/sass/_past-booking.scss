@@ -1,0 +1,239 @@
+.past-bookings {
+	
+	background-color: $light-gray4;
+	
+	&__date {
+		background-color: $dark-gray;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		
+		&__title {
+			margin: 0;
+			padding: 0;
+			margin-left: 40px;
+			color: white;
+			font-weight: 700;
+			
+			&__date {
+				font-weight: 500;
+			}
+			
+		}
+		
+	}
+	
+	&__container {
+		background-color: white;
+		border-radius: 10px;
+		margin-bottom: 45px;
+	}
+
+		
+	&__header {
+		background-color: $medium-gray3;
+		display: flex;
+		align-items: center;
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+
+		&__item {
+			font-size: 16px;
+			margin: 0px;
+			color: white;
+		}
+
+		&__start-time {
+			width: 12%;
+		}
+		
+		&__end-time {
+			width: 12%;
+		}
+		
+		&__name {
+			width: 17%;
+		}
+		
+		&__edit {
+			width: 8%;
+		}
+		
+		&__cancel {
+			width: 8%;
+		}
+		
+		&__type-amount-container {
+			width: 43%;
+		}
+		
+		&__type-amount-row {
+			width: 90%;
+			display: flex;
+		}
+		
+		&__type {
+			width: 60%;
+		}
+		
+		&__amount {
+			width: 40%;
+			text-align: right;
+		}
+
+	}
+
+	&__booking {
+		display: flex;
+		align-items: center;
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		border-top: 1px solid $medium-gray4;
+
+		&__item {
+			font-size: 16px;
+			margin: 0px;
+		}
+
+		&__start-time {
+			width: 12%;
+		}
+		
+		&__end-time {
+			width: 12%;
+		}
+		
+		&__type-amount-container {
+			width: 43%;
+		}
+		
+		&__type-amount-row {
+			display: flex;
+			align-items: center;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 90%;
+		}
+		
+		&__type-amount-row:nth-of-type(odd) {
+			background-color: $medium-gray4;
+		}
+
+		&__type-amount-row:nth-of-type(even) {
+			background-color: #DEDEDE;
+		}
+		
+		&__type {
+			width: 60%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		
+		&__amount {
+			width: 40%;
+			text-align: right;
+		}
+		
+		&__name {
+			width: 17%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		&__edit {
+			width: 8%;
+			color: $light-green;
+			transition: 0.2s all;
+		}
+
+		&__edit:hover {
+			color: $dark-green;
+			cursor: pointer;
+		}
+
+		&__cancel {
+			width: 8%;
+			color: $red;
+			transition: 0.2s all;
+		}
+
+		&__cancel:hover {
+			color: $text-gray;
+			cursor: pointer;
+		}
+
+	}
+	
+}
+		
+
+
+
+.past-bookings__modal {
+	
+	&__delete-container {
+		margin-bottom: 50px;
+	}
+	
+	&__delete-title {
+		margin-bottom: 10px;
+	}
+
+	&__submit {
+		background-color: $light-green;
+		padding: 15px 30px;
+		border-radius: 7px;
+		color: white !important;
+		font-size: 20px;
+		transition: 0.3s all;
+	}
+
+	&__submit:hover {
+		background-color: $dark-green;
+		cursor: pointer;
+	}
+
+	&__cancel {
+		padding: 15px 30px;
+		border-radius: 7px;
+		font-size: 20px;
+		transition: 0.3s all;
+		margin-bottom: 10px;
+		margin-left: 20px;
+		color: $red !important;
+		background-color: transparent;
+		border: 1px solid $red;
+	}
+
+	&__cancel:hover {
+		color: white !important;
+		cursor: pointer;
+		background-color: $red;
+	}
+	
+}
+
+
+
+
+.past-bookings__no-active {
+		
+	padding-top: 200px;
+	padding-bottom: 200px;
+
+	&__heading {
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+	}
+
+}

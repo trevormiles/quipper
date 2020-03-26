@@ -1,0 +1,113 @@
+.edit-booking-item {
+	width: 92%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 35px;
+	
+	&__title {
+		margin: 0;
+		padding: 0;
+		font-weight: 500;
+		margin-bottom: 5px;
+	}
+	
+	&__box-container {
+		padding-top: 25px;
+		padding-bottom: 35px;
+		padding-left: 35px;
+		padding-right: 35px;
+		background-color: $light-gray3;
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	
+	&__label {
+		display: block;
+		font-size: 18px;
+		margin: 0px;
+		padding: 0px;
+		margin-bottom: 3px;
+		font-weight: 300;
+	}
+	
+	&__input {
+		display: block;
+		width: 100%;
+		font-size: 16px;
+	}
+	
+	&__select {
+		display: block;
+		width: 100%;
+		font-size: 16px;
+		background-color: white;
+		border-color: #CCCCCC;
+		cursor: pointer;
+	}
+	
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	&__three-quarters {
+		width: 72.5%;
+	}
+	
+	&__one-quarter {
+		width: 25%;
+	}
+	
+	&__half {
+		width: 48.75%;
+	}
+	
+	&__number {
+		display: block;
+		padding: 7px 13px;
+		width: 100%;
+		font-size: 16px;
+	}
+	
+	&__errors {
+		margin-top: 40px;
+		margin-bottom: 0px;
+		
+		&__container {
+			margin-top: 60px;
+			display: none;
+		}
+		
+	}
+	
+	input[type=number] {
+		background-color: white;
+		border: 1px solid #CCCCCC;
+	}
+	
+	select {
+		border-radius: 0px;
+	}
+	
+	&__submit {
+		margin: 0px;
+		background-color: $light-green;
+		padding: 15px 30px;
+		border-radius: 5px;
+		font-size: 18px;
+		color: white !important;
+		transition: 0.3s all;
+		cursor: pointer;
+		
+		&__container {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__submit:hover {
+		background-color: $dark-green;
+	}
+	
+}

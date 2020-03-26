@@ -1,0 +1,189 @@
+.rental-categories {
+	
+	width: 92%;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 35px;
+	
+	&__page-title {
+		margin: 0;
+		padding: 0;
+		font-weight: 500;
+		margin-bottom: 5px;
+	}
+	
+	&__header {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		background-color: $dark-gray;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		
+		&__item {
+			margin: 0;
+			padding: 0;
+			color: white;
+			text-align: center;
+		}
+		
+		&__name {
+			width: 63%;
+			margin-left: 2%;
+			text-align: left;
+		}
+		
+		&__edit {
+			width: 15%;
+		}
+		
+		&__delete {
+			width: 20%;
+		}
+		
+	}
+	
+	&__categories {
+		
+		&__category {
+			
+			&__container {
+				display: flex;
+				align-items: center;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			
+			&__container:nth-of-type(odd) {
+				background-color: $light-gray2;
+			}
+			
+			&__container:nth-of-type(even) {
+				background-color: $light-gray1;
+			}
+			
+			&__item {
+				margin: 0;
+				padding: 0;
+				font-size: 16px;
+				transition: 0.3s all;
+			}
+			
+			&__name {
+				width: 61%;
+				margin-left: 2%;
+				white-space: nowrap;
+  				overflow: hidden;
+				text-overflow: ellipsis;
+				margin-right: 2%;
+			}
+
+			&__edit {
+				width: 15%;
+				color: $light-green !important;
+				text-align: center;
+			}
+			
+			&__edit:hover {
+				color: $dark-green !important;
+			}
+
+			&__delete {
+				width: 20%;
+				color: $red !important;
+				text-align: center;
+			}
+			
+			&__delete:hover {
+				color: $text-gray !important;
+				cursor: pointer;
+			}
+			
+			&__modal {
+				
+				&__title {
+					margin-top: 10px;
+					font-weight: 600;
+				}
+				
+				&__button {
+					
+					&__container {
+						display: flex;
+						align-items: center;
+						margin-top: 45px;
+					}
+					
+					&__submit {
+						margin: 0px;
+						background-color: $light-green;
+						padding: 15px 30px;
+						border-radius: 5px;
+						font-size: 18px;
+						color: white;
+						transition: 0.3s all;
+					}
+					
+					&__submit:hover {
+						background-color: $dark-green;
+					}
+					
+					&__cancel {
+						margin: 0px;
+						padding: 0px;
+						margin-left: 20px;
+						color: $red;
+						transition: 0.3s all;
+						font-size: 18px;
+					}
+					
+					&__cancel:hover {
+						cursor: pointer;
+						color: $text-gray;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	&__create {
+		
+		&__title {
+			margin: 0;
+			padding: 0;
+		}
+		
+		&__input {
+			display: block;
+			padding: 5px 10px;
+			min-width: 600px;
+			margin-bottom: 35px;
+			margin-top: 5px;
+		}
+		
+		&__button {
+			display: block;
+			background-color: $light-green;
+			transition: 0.3s all;
+			border-radius: 5px;
+			padding: 18px 32px;
+			font-size: 16px;
+			color: white;
+		}
+		
+		&__button:hover {
+			background-color: $dark-green;
+		}
+		
+		&__bold {
+			font-weight: 700;
+		}
+		
+	}
+	
+}

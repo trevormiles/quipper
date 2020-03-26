@@ -1,0 +1,245 @@
+.customers {
+	width: 92%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 35px;
+	
+	&__top-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 5px;
+	}
+	
+	&__title {
+		margin: 0;
+		padding: 0;
+		font-weight: 500;
+	}
+	
+	&__type-input {
+		
+		&__container {
+			width: 400px;
+			display: flex;
+			align-items: stretch;
+			margin-bottom: 10px;
+			height: 44px;
+		}
+		
+		&__container input[type=text] {
+			border: 2px solid $light-blue;
+			border-top-left-radius: 45px;
+			border-bottom-left-radius: 45px;
+		}
+		
+		&__container input:focus {
+			outline: none;
+		}
+		
+		&__input {
+			height: 100%;
+			width: 89%;
+			padding: 10px 15px;
+		}
+		
+		&__search-container {
+			width: 11%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			background-color: $light-blue;
+		}
+		
+		&__search-container i {
+			font-size: 18px;
+		}
+		
+	}
+	
+	&__table {
+		width: 100%;
+		table-layout: fixed;
+	}
+	
+	&__header {
+		background-color: $dark-gray2;
+		width: 100%;
+		
+		&__item {
+			color: white;
+			padding: 0;
+			margin: 0;
+			font-size: 16px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			font-weight: 400;
+		}
+		
+		&__name {
+			width: 36%;
+			padding-left: 2%;
+		}
+		
+		&__email {
+			width: 30%;
+		}
+		
+		&__phone {
+			width: 14%;
+		}
+		
+		&__edit {
+			width: 10%;
+			text-align: center;
+		}
+		
+		&__delete {
+			width: 10%;
+			text-align: center;
+		}
+		
+	}
+	
+	&__customer {
+		
+		background-color: $light-gray3;
+		border-top: 1px solid $light-gray1;
+		
+		width: 100%;
+		
+		&__item {
+			padding: 0;
+			margin: 0;
+			font-size: 16px;
+			padding-top: 7px;
+			padding-bottom: 7px;
+		}
+		
+		&__name {
+			width: 36%;
+			padding-left: 2%;
+			padding-right: 2%;
+			white-space: nowrap;
+  			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		
+		&__email {
+			width: 30%;
+			white-space: nowrap;
+  			overflow: hidden;
+			text-overflow: ellipsis;
+			padding-right: 2%;
+		}
+		
+		&__phone {
+			width: 14%;
+		}
+		
+		&__edit {
+			width: 10%;
+			text-align: center;
+		}
+		
+		&__delete {
+			width: 10%;
+			text-align: center;
+			cursor: pointer;
+		}
+		
+		&__edit a {
+			width: 12%;
+			color: $light-green !important;
+			text-align: center;
+		}
+		
+		&__edit a:hover {
+			color: $dark-green !important;
+		}
+		
+		&__delete a {
+			width: 12%;
+			color: $red !important;
+			text-align: center;
+		}
+		
+		&__delete a:hover {
+			color: $text-gray !important;
+		}
+	}
+	
+	
+	&__modal {
+				
+		&__title {
+			margin-top: 10px;
+			font-weight: 600;
+		}
+
+		&__button {
+
+			&__container {
+				display: flex;
+				align-items: center;
+				margin-top: 45px;
+			}
+
+			&__submit {
+				margin: 0px;
+				background-color: $light-green;
+				padding: 15px 30px;
+				border-radius: 5px;
+				font-size: 18px;
+				color: white;
+				transition: 0.3s all;
+			}
+
+			&__submit:hover {
+				background-color: $dark-green;
+			}
+
+			&__cancel {
+				margin: 0px;
+				padding: 0px;
+				margin-left: 20px;
+				color: $red;
+				transition: 0.3s all;
+				font-size: 18px;
+			}
+
+			&__cancel:hover {
+				cursor: pointer;
+				color: $text-gray;
+			}
+
+		}
+		
+		
+		&__there-are-active-items {
+			margin: 0;
+			padding: 0;
+			margin-top: 15px;
+			font-size: 16px;
+			font-weight: 300;
+		}
+
+	}
+	
+	
+	&__no-matches {
+		display: none;
+		background-color: $light-gray1;
+		
+		&__text {
+			text-align: center;
+			padding-top: 35px;
+			padding-bottom: 35px;
+		}
+		
+	}
+	
+}

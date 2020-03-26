@@ -1,0 +1,1238 @@
+.carts {
+	
+	background-color: $light-gray4;
+	
+	&__cart {
+		background-color: white;
+		border-radius: 10px;
+		margin-bottom: 55px;
+		
+		&__header {
+			background-color: $dark-gray;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			
+			&__title {
+				margin: 0;
+				padding: 0;
+				margin-left: 40px;
+				color: white;
+				font-weight: 700;
+			}
+			
+		}
+		
+		&__body {
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 30px;
+		}
+		
+	}
+	
+	&__category {
+		
+		&__title {
+			margin-top: 30px;
+			margin-bottom: 5px;
+			font-weight: 700;
+		}
+		
+	}
+	
+	&__rentals {
+		
+		&__header {
+			background-color: $medium-gray3;
+			display: flex;
+			align-items: center;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 7px;
+			padding-bottom: 7px;
+			
+			&__item {
+				font-size: 16px;
+				margin: 0px;
+				color: white;
+			}
+			
+			&__start-date {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__end-date {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__fee__mobile {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					display: none;
+				}
+			}
+			
+			&__items-container {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: flex;
+					width: 35%;
+					margin-right: 3.5%;
+				}
+			}
+			
+			&__items {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 62%;
+					padding-left: 10px;
+				}
+			}
+			
+			&__quantity {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 13%;
+				}
+			}
+			
+			&__fee__desktop {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 25%;
+					text-align: right;
+					padding-right: 10px;
+				}
+			}
+			
+			&__discount {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__total-fee {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__edit {
+				width: 10%;
+				
+				@media #{$desktop-wide} {
+					width: 6%;
+				}
+			}
+			
+			&__cancel {
+				width: 10%;
+				
+				@media #{$desktop-wide} {
+					width: 6%;
+				}
+			}
+			
+			&__collect {
+				width: 17.5%;
+				
+				@media #{$desktop-wide} {
+					width: 9.5%;
+				}
+			}
+			
+		}
+		
+		&__rental {
+			background-color: $light-gray4;
+			display: flex;
+			align-items: center;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			border-top: 1px solid $medium-gray4;
+			
+			&__item {
+				font-size: 16px;
+				margin: 0px;
+			}
+			
+			&__start-date {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__end-date {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__fee__mobile {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					display: none;
+				}
+			}
+			
+			&__items-container {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 35%;
+					margin-right: 3.5%;
+				}
+			}
+			
+			&__items-row {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					width: 100%;
+					display: flex;
+					padding-top: 5px;
+					padding-bottom: 5px;
+				}
+			}
+			
+			&__items-row:nth-of-type(odd) {
+				@media #{$desktop-wide} {
+					background-color: $medium-gray4;
+				}
+			}
+			
+			&__items-row:nth-of-type(even) {
+				@media #{$desktop-wide} {
+					background-color: #DEDEDE;
+				}
+			}
+			
+			&__items {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 62%;
+					padding-left: 10px;
+					white-space: nowrap;
+  					overflow: hidden;
+					text-overflow: ellipsis;
+					padding-right: 20px;
+				}
+			}
+			
+			&__quantity {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 13%;
+				}
+			}
+			
+			&__fee__desktop {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 25%;
+					text-align: right;
+					padding-right: 10px;
+				}
+			}
+			
+			&__items-total {
+				display: flex;
+				justify-content: flex-end;
+				padding-right: 10px;
+				margin-top: 5px;
+				
+				&__number {
+					font-weight: 700;
+					padding-left: 5px;
+				}
+				
+			}
+			
+			&__discount {
+				width: 12.5%;
+				display: flex;
+				align-items: center;
+				
+				&__input {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+				
+				&__input::-webkit-outer-spin-button {
+					-webkit-appearance: none;
+  					margin: 0;
+				}
+				
+				&__input::-webkit-inner-spin-button {
+					-webkit-appearance: none;
+  					margin: 0;
+				}
+				
+				&__input[type=number] {
+				  -moz-appearance:textfield;
+				}
+				
+				&__percentage {
+					margin: 0px;
+					margin-left: 5px;
+					padding: 0px;
+					font-size: 14px;
+				}
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+				
+			}
+			
+			&__total-fee {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__edit {
+				width: 10%;
+				color: $light-green;
+				transition: 0.2s all;
+				
+				@media #{$desktop-wide} {
+					width: 6%;
+				}
+			}
+			
+			&__edit:hover {
+				color: $dark-green;
+				cursor: pointer;
+			}
+			
+			&__cancel {
+				width: 10%;
+				color: $red;
+				transition: 0.2s all;
+				
+				@media #{$desktop-wide} {
+					width: 6%;
+				}
+			}
+			
+			&__cancel:hover {
+				color: $text-gray;
+				cursor: pointer;
+			}
+			
+			&__collect {
+				width: 17.5%;
+				
+				@media #{$desktop-wide} {
+					width: 9.5%;
+				}
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	&__bookings {
+		
+		&__header {
+			background-color: $medium-gray3;
+			display: flex;
+			align-items: center;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 7px;
+			padding-bottom: 7px;
+			
+			&__item {
+				font-size: 16px;
+				margin: 0px;
+				color: white;
+			}
+			
+			&__start-date {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__end-date {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__fee__mobile {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					display: none;
+				}
+			}
+			
+			&__items-container {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: flex;
+					width: 35%;
+					margin-right: 3.5%;
+				}
+			}
+			
+			&__items {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 60%;
+					padding-left: 10px;
+				}
+			}
+			
+			&__quantity {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 15%;
+				}
+			}
+			
+			&__fee__desktop {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 25%;
+					text-align: right;
+					padding-right: 10px;
+				}
+			}
+			
+			&__discount {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__total-fee {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__edit {
+				width: 10%;
+				
+				@media #{$desktop-wide} {
+					width: 6%;
+				}
+			}
+			
+			&__cancel {
+				width: 10%;
+				
+				@media #{$desktop-wide} {
+					width: 6%;
+				}
+			}
+			
+			&__collect {
+				width: 17.5%;
+				
+				@media #{$desktop-wide} {
+					width: 9.5%;
+				}
+			}
+			
+		}
+		
+		&__booking {
+			background-color: $light-gray4;
+			display: flex;
+			align-items: center;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			border-top: 1px solid $medium-gray4;
+			
+			&__item {
+				font-size: 16px;
+				margin: 0px;
+			}
+			
+			&__start-date {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__end-date {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__fee__mobile {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					display: none;
+				}
+			}
+			
+			&__items-container {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 35%;
+					margin-right: 3.5%;
+				}
+			}
+			
+			&__items-row {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					width: 100%;
+					display: flex;
+					padding-top: 5px;
+					padding-bottom: 5px;
+				}
+			}
+			
+			&__items-row:nth-of-type(odd) {
+				@media #{$desktop-wide} {
+					background-color: $medium-gray4;
+				}
+			}
+			
+			&__items-row:nth-of-type(even) {
+				@media #{$desktop-wide} {
+					background-color: #DEDEDE;
+				}
+			}
+			
+			&__items {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 60%;
+					padding-left: 10px;
+					white-space: nowrap;
+  					overflow: hidden;
+					text-overflow: ellipsis;
+					padding-right: 20px;
+				}
+			}
+			
+			&__quantity {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 15%;
+				}
+			}
+			
+			&__fee__desktop {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 25%;
+					text-align: right;
+					padding-right: 10px;
+				}
+			}
+			
+			&__items-total {
+				display: flex;
+				justify-content: flex-end;
+				padding-right: 10px;
+				margin-top: 5px;
+				
+				&__number {
+					font-weight: 700;
+					padding-left: 5px;
+				}
+				
+			}
+			
+			&__discount {
+				width: 12.5%;
+				display: flex;
+				align-items: center;
+				
+				&__input {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+				
+				&__input::-webkit-outer-spin-button {
+					-webkit-appearance: none;
+  					margin: 0;
+				}
+				
+				&__input::-webkit-inner-spin-button {
+					-webkit-appearance: none;
+  					margin: 0;
+				}
+				
+				&__input[type=number] {
+				  -moz-appearance:textfield;
+				}
+				
+				&__percentage {
+					margin: 0px;
+					margin-left: 5px;
+					padding: 0px;
+					font-size: 14px;
+				}
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+				
+			}
+			
+			&__total-fee {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__edit {
+				width: 10%;
+				color: $light-green;
+				transition: 0.2s all;
+				
+				@media #{$desktop-wide} {
+					width: 6%;
+				}
+			}
+			
+			&__edit:hover {
+				color: $dark-green;
+				cursor: pointer;
+			}
+			
+			&__cancel {
+				width: 10%;
+				color: $red;
+				transition: 0.2s all;
+				
+				@media #{$desktop-wide} {
+					width: 6%;
+				}
+			}
+			
+			&__cancel:hover {
+				color: $text-gray;
+				cursor: pointer;
+			}
+			
+			&__collect {
+				width: 17.5%;
+				
+				@media #{$desktop-wide} {
+					width: 9.5%;
+				}
+			}
+			
+		}
+		
+	}
+	
+	
+	
+	
+	&__sales {
+		
+		&__header {
+			background-color: $medium-gray3;
+			display: flex;
+			align-items: center;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 7px;
+			padding-bottom: 7px;
+			
+			&__item {
+				font-size: 16px;
+				margin: 0px;
+				color: white;
+			}
+			
+			&__start-date {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__end-date {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__fee__mobile {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					display: none;
+				}
+			}
+			
+			&__items-container {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: flex;
+					width: 35%;
+					margin-right: 3.5%;
+				}
+			}
+			
+			&__items {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 62%;
+					padding-left: 10px;
+				}
+			}
+			
+			&__quantity {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 13%;
+				}
+			}
+			
+			&__fee__desktop {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 25%;
+					text-align: right;
+					padding-right: 10px;
+				}
+			}
+			
+			&__discount {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__total-fee {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__edit {
+				width: 10%;
+				
+				@media #{$desktop-wide} {
+					width: 6%;
+				}
+			}
+			
+			&__cancel {
+				width: 10%;
+				
+				@media #{$desktop-wide} {
+					width: 6%;
+				}
+			}
+			
+			&__collect {
+				width: 17.5%;
+				
+				@media #{$desktop-wide} {
+					width: 9.5%;
+				}
+			}
+			
+		}
+		
+		&__sale {
+			background-color: $light-gray4;
+			display: flex;
+			align-items: center;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			border-top: 1px solid $medium-gray4;
+			
+			&__item {
+				font-size: 16px;
+				margin: 0px;
+			}
+			
+			&__start-date {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__end-date {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__fee__mobile {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					display: none;
+				}
+			}
+			
+			&__items-container {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 35%;
+					margin-right: 3.5%;
+				}
+			}
+			
+			&__items-row {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					width: 100%;
+					display: flex;
+					padding-top: 5px;
+					padding-bottom: 5px;
+				}
+			}
+			
+			&__items-row:nth-of-type(odd) {
+				@media #{$desktop-wide} {
+					background-color: $medium-gray4;
+				}
+			}
+			
+			&__items-row:nth-of-type(even) {
+				@media #{$desktop-wide} {
+					background-color: #DEDEDE;
+				}
+			}
+			
+			&__items {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 62%;
+					padding-left: 10px;
+					white-space: nowrap;
+  					overflow: hidden;
+					text-overflow: ellipsis;
+					padding-right: 20px;
+				}
+			}
+			
+			&__quantity {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 13%;
+				}
+			}
+			
+			&__fee__desktop {
+				display: none;
+				
+				@media #{$desktop-wide} {
+					display: block;
+					width: 25%;
+					text-align: right;
+					padding-right: 10px;
+				}
+			}
+			
+			&__items-total {
+				display: flex;
+				justify-content: flex-end;
+				padding-right: 10px;
+				margin-top: 5px;
+				
+				&__number {
+					font-weight: 700;
+					padding-left: 5px;
+				}
+				
+			}
+			
+			&__discount {
+				width: 12.5%;
+				display: flex;
+				align-items: center;
+				
+				&__input {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+				
+				&__input::-webkit-outer-spin-button {
+					-webkit-appearance: none;
+  					margin: 0;
+				}
+				
+				&__input::-webkit-inner-spin-button {
+					-webkit-appearance: none;
+  					margin: 0;
+				}
+				
+				&__input[type=number] {
+				  -moz-appearance:textfield;
+				}
+				
+				&__percentage {
+					margin: 0px;
+					margin-left: 5px;
+					padding: 0px;
+					font-size: 14px;
+				}
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+				
+			}
+			
+			&__total-fee {
+				width: 12.5%;
+				
+				@media #{$desktop-wide} {
+					width: 10%;
+				}
+			}
+			
+			&__edit {
+				width: 10%;
+				color: $light-green;
+				transition: 0.2s all;
+				
+				@media #{$desktop-wide} {
+					width: 6%;
+				}
+			}
+			
+			&__edit:hover {
+				color: $dark-green;
+				cursor: pointer;
+			}
+			
+			&__cancel {
+				width: 10%;
+				color: $red;
+				transition: 0.2s all;
+				
+				@media #{$desktop-wide} {
+					width: 6%;
+				}
+			}
+			
+			&__cancel:hover {
+				color: $text-gray;
+				cursor: pointer;
+			}
+			
+			&__collect {
+				width: 17.5%;
+				
+				@media #{$desktop-wide} {
+					width: 9.5%;
+				}
+			}
+			
+		}
+		
+	}
+	
+	&__bottom {
+		margin-top: 60px;
+		margin-bottom: 35px;
+		
+		&__left {
+			margin-top: -30px;
+		}
+
+		&__total {
+			display: flex;
+			margin-bottom: 35px;
+
+			&__total {
+				margin-right: 5px;
+			}
+
+			&__number {
+				font-weight: 700;
+				color: $dark-blue;
+			}
+
+		}
+		
+		&__submit {
+			padding: 16px 32px;
+			font-size: 18px;
+			border-radius: 5px;
+			background-color: $light-green;
+			color: white !important;
+			transition: 0.2s all;
+		}
+		
+		&__submit:hover {
+			background-color: $dark-green;
+			cursor: pointer;
+		}
+		
+		&__right {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			padding-left: 30px;
+			padding-right: 30px;
+			
+			&__title {
+				font-size: 16px;
+				width: 82.5%;
+				text-align: right;
+				margin: 0px;
+				margin-right: 7.5px;
+				
+				@media #{$desktop-wide} {
+					width: 90.5%;
+				}
+			}
+			
+			&__switch {
+				width: 17.5%;
+				
+				@media #{$desktop-wide} {
+					width: 9.5%;
+				}
+				
+			}
+			
+		}
+
+	}
+	
+	&__success {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(18,49,71,0.85);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		&__box {
+			background-color: white;
+			border-radius: 20px;
+		}
+		
+		&__title {
+			padding: 75px 100px;
+			margin: 0px;
+		}
+		
+		&__check {
+			color: $light-green;
+			margin-right: 10px;
+		}
+		
+		&__name {
+			font-weight: 700;
+		}
+		
+	}
+	
+}
+
+
+
+.carts__modal {
+	
+	&__delete-container {
+		margin-bottom: 50px;
+	}
+	
+	&__delete-title {
+		margin-bottom: 10px;
+	}
+
+	&__submit {
+		background-color: $light-green;
+		padding: 15px 30px;
+		border-radius: 7px;
+		color: white !important;
+		font-size: 20px;
+		transition: 0.3s all;
+	}
+
+	&__submit:hover {
+		background-color: $dark-green;
+		cursor: pointer;
+	}
+
+	&__cancel {
+		padding: 15px 30px;
+		border-radius: 7px;
+		font-size: 20px;
+		transition: 0.3s all;
+		margin-bottom: 10px;
+		margin-left: 20px;
+		color: $red !important;
+		background-color: transparent;
+		border: 1px solid $red;
+	}
+
+	&__cancel:hover {
+		color: white !important;
+		cursor: pointer;
+		background-color: $red;
+	}
+	
+}
+
+
+
+
+.carts__no-checked {
+	
+	display: none;
+	
+	&__container {
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-top: -10px;
+	}
+	
+	&__spacer {
+		height: 25px;
+		width: 100%;
+	}
+	
+}
+
+
+
+
+.carts__no-active {
+		
+	padding-top: 200px;
+	padding-bottom: 200px;
+
+	&__heading {
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+	}
+
+}
+
+#carts .carts__rentals__rental__discount__input {
+	background-color: white;
+	width: 50px;
+	height: 35px;
+}
+
+#carts .carts__bookings__booking__discount__input {
+	background-color: white;
+	width: 50px;
+	height: 35px;
+}
+
+#carts .carts__sales__sale__discount__input {
+	background-color: white;
+	width: 50px;
+	height: 35px;
+}

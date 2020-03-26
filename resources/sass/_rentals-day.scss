@@ -1,0 +1,202 @@
+.rentals-day {
+	
+	&__title {
+		background-color: $dark-gray;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 2%;
+		color: white;
+		font-weight: 600;
+		margin: 0;
+	}
+	
+	&__header {
+		background-color: $medium-gray3;
+		display: flex;
+		align-items: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		
+		&__customer {
+			color: white;
+			width: 18%;
+			margin: 0;
+			padding: 0;
+			margin-left: 2%;
+			font-size: 16px;
+		}
+		
+		&__items-container {
+			width: 77%;
+			display: flex;
+			align-items: center;
+		}
+		
+		&__item {
+			color: white;
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			
+			&__item-name {
+				width: 35%;
+			}
+			
+			&__rate {
+				width: 20%;
+			}
+			
+			&__days {
+				width: 15%;
+			}
+			
+			&__quantity {
+				width: 15%;
+			}
+			
+			&__fee {
+				width: 13%;
+				text-align: right;
+				margin-right: 2%;
+			}
+			
+		}
+		
+	}
+	
+	
+	&__rental {
+		
+		color: $text-gray;
+		
+		&__container {
+			display: flex;
+			align-items: center;
+			border-top: 1px solid $light-gray2;
+		}
+		
+		&__container:hover {
+			background-color: $extra-light-blue;
+		}
+		
+		&__customer {
+			color: $text-gray;
+			width: 16%;
+			margin: 0;
+			padding: 0;
+			margin-left: 2%;
+			margin-right: 2%;
+			font-size: 18px;
+			font-weight: 700;
+		}
+		
+		&__customer:hover {
+			text-decoration-line: underline;
+		}
+		
+		&__items-container {
+			width: 77%;
+			margin-top: 40px;
+			margin-bottom: 10px;
+		}
+		
+		&__item-container:nth-child(even) {
+			background-color: $light-gray2;
+		}
+		
+		&__item-container:nth-child(odd) {
+			background-color: $light-gray1;
+		}
+		
+		&__item-container {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			padding-top: 7px;
+			padding-bottom: 7px;
+		}
+		
+		&__item {
+			
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			
+			&__item-name {
+				width: 33%;
+				margin-left: 1%;
+				margin-right: 1%;
+				white-space: nowrap;
+  				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			
+			&__rate {
+				width: 20%;
+			}
+			
+			&__rate:hover {
+				font-weight: 700;
+			}
+			
+			&__days {
+				width: 15%;
+			}
+			
+			&__quantity {
+				width: 15%;
+			}
+			
+			&__fee {
+				width: 13%;
+				text-align: right;
+				margin-right: 2%;
+			}
+			
+		}
+		
+		&__total {
+			display: flex;
+			justify-content: flex-end;
+			padding: 0;
+			margin: 0;
+			
+			&__text {
+				width: 125px;
+				border-top: 2px solid $medium-gray3;
+				padding-right: 2%;
+				font-size: 16px;
+				text-align: right;
+				padding-top: 7px;
+			}
+			
+		}
+		
+		
+	}
+	
+	&__rental:hover {
+		color: $text-gray;
+		text-decoration-line: none;
+	}
+	
+	
+	&__none {
+		
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-color: $extra-light-blue;
+		
+		&__text {
+			text-align: center;
+			opacity: 0.8;
+		}
+		
+	}
+	
+	
+}
+
+.rentals-day__rental:hover .rentals-day__rental__customer {
+	text-decoration-line: underline;
+}

@@ -1,0 +1,52 @@
+.sub-navbar {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: white;
+	position: relative;
+	z-index: 100;
+	
+	&__container {
+		padding-left: 130px;
+		display: flex;
+	}
+	
+	&__link {
+		font-size: 20px;
+		font-weight: $font-semi-bold;
+		color: $text-gray;
+		opacity: 0.65;
+		padding-right: 45px;
+		
+		i {
+			margin-right: 3.5px;
+		}
+	}
+	
+	&__link:hover {
+		text-decoration-line: none;
+		color: $text-gray;
+	}
+	
+	&__red {
+		background-color: $red;
+	}
+	
+	&__red .sub-navbar__link {
+		color: white;
+		opacity: 0.75;
+	}
+	
+	&__red .sub-navbar__link:hover {
+		color: white;
+	}
+}
+
+.sub-nav-active {
+	color: $red;
+	opacity: 1 !important;
+	font-weight: $font-bold;
+}
+
+.sub-nav-active:hover {
+	color: $red;
+}

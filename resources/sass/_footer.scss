@@ -1,0 +1,53 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#page-container {
+	min-height: 100%;
+	position: relative;
+}
+
+.action-panel-footer-spacer {
+	width: 100%;
+	height: 55px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: $dark-blue;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	
+	&__links-container {
+		width: 650px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+	}
+	
+	&__link {
+		color: white;
+		font-weight: 100;
+		font-size: 12px;
+		transition: 0.3s all;
+	}
+	
+	&__link:hover {
+		text-decoration-line: none;
+		color: #ACABEA;
+	}
+	
+	&__copyright {
+		margin: 0;
+		padding: 0;
+		color: white;
+		font-weight: 600;
+		font-size: 12px;
+	}
+	
+}

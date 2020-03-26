@@ -1,0 +1,43 @@
+// Body
+$body-bg: #E6E6E6;
+
+// Typography
+$font-family-sans-serif: 'Nunito Sans', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Font Weights
+$font-light: 300;
+$font-regular: 400;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-extra-bold: 800;
+$font-black: 900;
+
+// Colors
+$dark-blue: #133148;
+$medium-blue: #5789BC;
+$light-blue: #78A5D3;
+$extra-light-blue: #F8F7FF;
+
+$dark-green: #40A044;
+$light-green: #59C15D;
+
+$red: #B23E3E;
+
+$dark-gray: #525252;
+$dark-gray2: #717171;
+$medium-gray1: #848484;
+$medium-gray2: #909090;
+$medium-gray3: #B7B7B7;
+$medium-gray4: #D8D8D8;
+$light-gray1: #DEDEDE;
+$light-gray2: #EBEBEB;
+$light-gray3: #F5F5F5; // Used for boxes on the action panel
+$light-gray4: #E6E6E6; // Used for the background empty space of the action panel
+$text-gray: #404040;
+
+// Media Queries
+$desktop: "only screen and (min-width : 1200px)";
+$desktop-wide: "only screen and (min-width : 1600px)";
+

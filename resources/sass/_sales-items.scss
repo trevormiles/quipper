@@ -1,0 +1,226 @@
+.sales-items {
+	width: 92%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 35px;
+	
+	&__title {
+		margin: 0;
+		padding: 0;
+		font-weight: 500;
+		margin-bottom: 5px;
+	}
+	
+	&__header {
+		background-color: $medium-gray3;
+		display: flex;
+		align-items: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		
+		&__item {
+			margin: 0;
+			padding: 0;
+			color: white;
+			font-size: 16px;
+			font-weight: 300;
+		}
+		
+		&__name {
+			width: 47%;
+			margin-left: 5%;
+		}
+		
+		&__quantity {
+			width: 12%;
+		}
+		
+		&__price {
+			width: 12%;
+		}
+		
+		&__edit {
+			width: 12%;
+			text-align: center;
+		}
+		
+		&__delete {
+			width: 12%;
+			text-align: center;
+		}
+		
+	}
+	
+	&__item-row {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		
+		&__item {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			font-weight: 300;
+			transition: 0.3s all;
+		}
+		
+		&__name {
+			width: 45%;
+			margin-left: 5%;
+			white-space: nowrap;
+  			overflow: hidden;
+			text-overflow: ellipsis;
+			margin-right: 2%;
+		}
+		
+		&__quantity {
+			width: 12%;
+		}
+		
+		&__price {
+			width: 12%;
+		}
+		
+		&__edit {
+			width: 12%;
+			color: $light-green !important;
+			text-align: center;
+		}
+		
+		&__edit:hover {
+			color: $dark-green !important;
+		}
+		
+		&__delete {
+			width: 12%;
+			color: $red !important;
+			text-align: center;
+		}
+		
+		&__delete:hover {
+			color: $text-gray !important;
+		}
+		
+	}
+	
+	&__item-row:nth-of-type(even) {
+		background-color: $light-gray2;
+	}
+	
+	&__item-row:nth-of-type(odd) {
+		background-color: $light-gray3;
+	}
+	
+	
+	&__modal {
+				
+		&__title {
+			margin-top: 10px;
+			font-weight: 600;
+		}
+
+		&__button {
+
+			&__container {
+				display: flex;
+				align-items: center;
+				margin-top: 45px;
+			}
+
+			&__submit {
+				margin: 0px;
+				background-color: $light-green;
+				padding: 15px 30px;
+				border-radius: 5px;
+				font-size: 18px;
+				color: white;
+				transition: 0.3s all;
+			}
+
+			&__submit:hover {
+				background-color: $dark-green;
+			}
+
+			&__cancel {
+				margin: 0px;
+				padding: 0px;
+				margin-left: 20px;
+				color: $red;
+				transition: 0.3s all;
+				font-size: 18px;
+			}
+
+			&__cancel:hover {
+				cursor: pointer;
+				color: $text-gray;
+			}
+
+		}
+		
+		
+		&__there-are-active-items {
+			margin: 0;
+			padding: 0;
+			margin-top: 15px;
+			font-size: 16px;
+			font-weight: 300;
+		}
+
+	}
+	
+}
+
+
+
+
+#page-container .card:nth-of-type(odd) .card-header {
+	background-color: $dark-gray;
+}
+
+#page-container .card:nth-of-type(even) .card-header {
+	background-color: $dark-gray2;
+}
+
+#page-container .card {
+	border: none;
+}
+
+#page-container .card .card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 3%;
+	width: 100%;
+}
+
+#page-container .card .card-header i {
+	transition: transform 0.2s ease-out;
+}
+
+#page-container .card .card-header__title {
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+#page-container .card .card-header:hover {
+	cursor: pointer;
+}
+
+#page-container .card-header__arrow {
+	color: white;
+}
+
+#page-container .card-body {
+	padding: 0px;
+}
+
+.card-header.down {
+	i {
+		transform: rotate(180deg);
+		transform-origin: center center;
+	}
+}

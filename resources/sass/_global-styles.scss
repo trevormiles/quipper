@@ -1,0 +1,47 @@
+body {
+	color: $text-gray !important;
+	background-color: $light-gray4 !important;
+}
+
+.modal-backdrop {
+   background-color: $dark-blue !important;
+}
+
+.modal-backdrop.show {
+	opacity: 0.8 !important;
+}
+
+.ui-timepicker-container {
+	padding: 0px;
+	font-family: "Nunito Sans", sans-serif;
+}
+
+.ui-timepicker {
+	padding: 0px;
+	width: 100%;
+}
+
+.ui-timepicker-standard a {
+	padding: 0px;
+	border: none;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.ui-menu-item {
+	width: 100%;
+}
+
+.ui-timepicker-viewport {
+	width: 100%;
+}
+
+.ui-corner-all:hover .ui-state-hover {
+	border: none;
+	background-color: $light-gray2;
+}
+
+.ui-timepicker-standard .ui-state-hover {
+	border: none;
+	background-color: $light-gray2;
+}
